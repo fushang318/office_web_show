@@ -54,7 +54,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
-  get "/office/wopi/files/:file_id" => "index#meta"
-  get "/office/wopi/files/:file_id/contents" => "index#contents"
+# /wopi/files/@/fileId?fileId=abc
+  get "/office/wopi/files/@/fileId" => "index#meta"
+  get "/office/wopi/files/@/fileId/contents" => "index#contents"
 end
